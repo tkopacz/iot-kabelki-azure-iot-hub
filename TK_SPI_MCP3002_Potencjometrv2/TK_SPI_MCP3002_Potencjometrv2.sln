@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TK_SPI_MCP3002_Potencjometrv2", "TK_SPI_MCP3002_Potencjometrv2\TK_SPI_MCP3002_Potencjometrv2.csproj", "{B103C86D-9D45-40F7-88A0-2AA6F5E41B74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B103C86D-9D45-40F7-88A0-2AA6F5E41B74}.Debug|ARM.ActiveCfg = Debug|ARM
+		{B103C86D-9D45-40F7-88A0-2AA6F5E41B74}.Debug|ARM.Build.0 = Debug|ARM
+		{B103C86D-9D45-40F7-88A0-2AA6F5E41B74}.Debug|ARM.Deploy.0 = Debug|ARM
+		{B103C86D-9D45-40F7-88A0-2AA6F5E41B74}.Debug|x64.ActiveCfg = Debug|x64
+		{B103C86D-9D45-40F7-88A0-2AA6F5E41B74}.Debug|x64.Build.0 = Debug|x64
+		{B103C86D-9D45-40F7-88A0-2AA6F5E41B74}.Debug|x64.Deploy.0 = Debug|x64
+		{B103C86D-9D45-40F7-88A0-2AA6F5E41B74}.Debug|x86.ActiveCfg = Debug|x86
+		{B103C86D-9D45-40F7-88A0-2AA6F5E41B74}.Debug|x86.Build.0 = Debug|x86
+		{B103C86D-9D45-40F7-88A0-2AA6F5E41B74}.Debug|x86.Deploy.0 = Debug|x86
+		{B103C86D-9D45-40F7-88A0-2AA6F5E41B74}.Release|ARM.ActiveCfg = Release|ARM
+		{B103C86D-9D45-40F7-88A0-2AA6F5E41B74}.Release|ARM.Build.0 = Release|ARM
+		{B103C86D-9D45-40F7-88A0-2AA6F5E41B74}.Release|ARM.Deploy.0 = Release|ARM
+		{B103C86D-9D45-40F7-88A0-2AA6F5E41B74}.Release|x64.ActiveCfg = Release|x64
+		{B103C86D-9D45-40F7-88A0-2AA6F5E41B74}.Release|x64.Build.0 = Release|x64
+		{B103C86D-9D45-40F7-88A0-2AA6F5E41B74}.Release|x64.Deploy.0 = Release|x64
+		{B103C86D-9D45-40F7-88A0-2AA6F5E41B74}.Release|x86.ActiveCfg = Release|x86
+		{B103C86D-9D45-40F7-88A0-2AA6F5E41B74}.Release|x86.Build.0 = Release|x86
+		{B103C86D-9D45-40F7-88A0-2AA6F5E41B74}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

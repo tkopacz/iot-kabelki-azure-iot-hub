@@ -1,0 +1,28 @@
++CWLAP:(3,"CBA_F1",-92,"e8:94:f6:3f:5a:01",11)
+
+AT+RST
+AT+CWMODE=3
+AT+CWSAP="CBA_F1","aaaaaa",11,3
+AT+CWSAP?
+
+Odbiera smieci
+AT+CWJAP="CBA_F1","aaaa"
+Odlaczenie
+AT+CWJAP="",""
+
+AT+CIFSR - adres IP
+
+AT+RST
+AT+CWMODE=1
+AT+CWJAP="CBA_F1","bgh12QW2"
+AT+CIFSR
+
+AT+CIPMUX=1
+AT+CIPSTART=4,"TCP","google.com",80
+AT+CIPSEND=4,18
+GET / HTTP/1.0
+(i enter pusty)
+
+AT+CIPSTART=4,"TCP","bing.com",80
+AT+CIPSEND=4,18
+GET / HTTP/1.0

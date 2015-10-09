@@ -1,0 +1,68 @@
+﻿saImportant 
+Query:
+
+SELECT * INTO [sqlMsg] FROM [iot] TIMESTAMP BY Dt where MsgType='M'
+SELECT * INTO [blob] FROM [iot] TIMESTAMP BY Dt where MsgType='M'
+SELECT * INTO [blobmeasurement]  FROM [iot] TIMESTAMP BY Dt where MsgType='T'
+
+SELECT DateAdd(minute,-2,System.TimeStamp) AS EventStartTime, System.TimeStamp AS EventEndTime, 
+COUNT(*) as Cnt, SUM(PIR) as PIRCnt INTO [burglar]
+FROM [iot] TIMESTAMP BY Dt
+GROUP BY SlidingWindow(minute, 2)
+HAVING SUM(PIR) > 3
+
+SELECT DateAdd(minute,-1,System.TimeStamp) AS EventStartTime, System.TimeStamp AS EventEndTime, 
+Min(ARDUINO_DIST) as MinDist, Max(ARDUINO_DIST) as MaxDist, Avg(ARDUINO_DIST) as AvgDist INTO [distance]
+FROM [iot] TIMESTAMP BY Dt  
+GROUP BY SlidingWindow(minute, 1)
+HAVING Min(ARDUINO_DIST) < 50
+
+Input:
+IoT
+ihsuproddbres003dednamespace
+iothub-ehub-pltkw3iot-968-384478b6a9
+iothubowner
+<password>
+<consumer group empty>
+JSON
+UTF8
+
+Output:
+blob: pltkw3iotblob - saimportant
+blobmeasurement: pltkw3iotblob - sameasurement
+burglar: pltkw3iotblob - saburglar
+distance: pltkw3iotblob - sadistance
+
+Uwaga! Storage na ARM - dodać do VS ręcznie
+
+sqlMsg: nynftttf24v12.database.windows.net - tkDemoLoadToSQLDB - [IoT].[MsgImportant]
+Schemat:
+CREATE TABLE [IoT].[MsgImportant] (
+    [Message]               NVARCHAR (MAX) NULL,
+    [Dt]                    DATETIME2 (7)  NULL,
+    [MsgType]               NCHAR (1)      NULL,
+    [DeviceName]            NVARCHAR (50)  NULL,
+    [EventProcessedUtcTime] DATETIME       NULL,
+    [PartitionId]           INT            NULL,
+    [EventEnqueuedUtcTime]  DATETIME2 (7)  NULL
+);
+
+
+GO
+CREATE NONCLUSTERED INDEX [IX_MsgImportant_Column]
+    ON [IoT].[MsgImportant]([Dt] ASC);
+
+
+GO
+CREATE NONCLUSTERED INDEX [IX_MsgImportant_Column_1]
+    ON [IoT].[MsgImportant]([DeviceName] ASC);
+
+
+GO
+CREATE NONCLUSTERED INDEX [IX_MsgImportant_Column_2]
+    ON [IoT].[MsgImportant]([EventEnqueuedUtcTime] ASC);
+
+
+GO
+CREATE NONCLUSTERED INDEX [IX_MsgImportant_Column_3]
+    ON [IoT].[MsgImportant]([EventProcessedUtcTime] ASC);

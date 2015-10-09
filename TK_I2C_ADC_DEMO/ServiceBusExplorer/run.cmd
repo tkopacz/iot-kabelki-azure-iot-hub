@@ -1,0 +1,1 @@
+start ServiceBusExplorer.exe /c "Endpoint=sb://mvafy15.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=ABC"

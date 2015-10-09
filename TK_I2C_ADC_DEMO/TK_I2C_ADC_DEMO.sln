@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TK_I2C_ADC_DEMO", "TK_I2C_ADC_DEMO\TK_I2C_ADC_DEMO.csproj", "{633B416F-82DC-48B8-A29E-8AB99CB5B4B3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CPPHelper", "..\TK_LCD\CPPHelper\CPPHelper.vcxproj", "{90E99C2F-A839-46A1-A08F-095E45A9DF15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{633B416F-82DC-48B8-A29E-8AB99CB5B4B3}.Debug|ARM.ActiveCfg = Debug|ARM
+		{633B416F-82DC-48B8-A29E-8AB99CB5B4B3}.Debug|ARM.Build.0 = Debug|ARM
+		{633B416F-82DC-48B8-A29E-8AB99CB5B4B3}.Debug|ARM.Deploy.0 = Debug|ARM
+		{633B416F-82DC-48B8-A29E-8AB99CB5B4B3}.Debug|x64.ActiveCfg = Debug|x64
+		{633B416F-82DC-48B8-A29E-8AB99CB5B4B3}.Debug|x64.Build.0 = Debug|x64
+		{633B416F-82DC-48B8-A29E-8AB99CB5B4B3}.Debug|x64.Deploy.0 = Debug|x64
+		{633B416F-82DC-48B8-A29E-8AB99CB5B4B3}.Debug|x86.ActiveCfg = Debug|x86
+		{633B416F-82DC-48B8-A29E-8AB99CB5B4B3}.Debug|x86.Build.0 = Debug|x86
+		{633B416F-82DC-48B8-A29E-8AB99CB5B4B3}.Debug|x86.Deploy.0 = Debug|x86
+		{633B416F-82DC-48B8-A29E-8AB99CB5B4B3}.Release|ARM.ActiveCfg = Release|ARM
+		{633B416F-82DC-48B8-A29E-8AB99CB5B4B3}.Release|ARM.Build.0 = Release|ARM
+		{633B416F-82DC-48B8-A29E-8AB99CB5B4B3}.Release|ARM.Deploy.0 = Release|ARM
+		{633B416F-82DC-48B8-A29E-8AB99CB5B4B3}.Release|x64.ActiveCfg = Release|x64
+		{633B416F-82DC-48B8-A29E-8AB99CB5B4B3}.Release|x64.Build.0 = Release|x64
+		{633B416F-82DC-48B8-A29E-8AB99CB5B4B3}.Release|x64.Deploy.0 = Release|x64
+		{633B416F-82DC-48B8-A29E-8AB99CB5B4B3}.Release|x86.ActiveCfg = Release|x86
+		{633B416F-82DC-48B8-A29E-8AB99CB5B4B3}.Release|x86.Build.0 = Release|x86
+		{633B416F-82DC-48B8-A29E-8AB99CB5B4B3}.Release|x86.Deploy.0 = Release|x86
+		{90E99C2F-A839-46A1-A08F-095E45A9DF15}.Debug|ARM.ActiveCfg = Debug|ARM
+		{90E99C2F-A839-46A1-A08F-095E45A9DF15}.Debug|ARM.Build.0 = Debug|ARM
+		{90E99C2F-A839-46A1-A08F-095E45A9DF15}.Debug|x64.ActiveCfg = Debug|x64
+		{90E99C2F-A839-46A1-A08F-095E45A9DF15}.Debug|x64.Build.0 = Debug|x64
+		{90E99C2F-A839-46A1-A08F-095E45A9DF15}.Debug|x86.ActiveCfg = Debug|Win32
+		{90E99C2F-A839-46A1-A08F-095E45A9DF15}.Debug|x86.Build.0 = Debug|Win32
+		{90E99C2F-A839-46A1-A08F-095E45A9DF15}.Release|ARM.ActiveCfg = Release|ARM
+		{90E99C2F-A839-46A1-A08F-095E45A9DF15}.Release|ARM.Build.0 = Release|ARM
+		{90E99C2F-A839-46A1-A08F-095E45A9DF15}.Release|x64.ActiveCfg = Release|x64
+		{90E99C2F-A839-46A1-A08F-095E45A9DF15}.Release|x64.Build.0 = Release|x64
+		{90E99C2F-A839-46A1-A08F-095E45A9DF15}.Release|x86.ActiveCfg = Release|Win32
+		{90E99C2F-A839-46A1-A08F-095E45A9DF15}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 1
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tkopaczms.visualstudio.com/defaultcollection
+		SccProjectUniqueName0 = TK_I2C_ADC_DEMO\\TK_I2C_ADC_DEMO.csproj
+		SccProjectName0 = TK_I2C_ADC_DEMO
+		SccAuxPath0 = https://tkopaczms.visualstudio.com/defaultcollection
+		SccLocalPath0 = TK_I2C_ADC_DEMO
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+EndGlobal
